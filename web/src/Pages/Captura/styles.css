@@ -1,0 +1,149 @@
+.cap_header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cap_header_h1 {
+  font-size: 35px;
+}
+
+.cap_header_h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Ubuntu;
+  /* font-weight: 700; */
+  /* color: #ef234b; */
+  color: red;
+}
+
+.faixa {
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+/* 
+.faixa_img {
+  
+}
+
+@media(max-width: 300px) {
+  .faixa_img {
+    width: 20vw;
+  }
+} */
+/* 288 x 512 */
+
+.form_book {
+  margin-top: 20px;
+  /* height: 300px; */
+}
+
+.form {
+  text-align: center;
+  margin: 40px 0 40px 0;
+
+}
+
+.caixa {
+  margin-bottom: 10px;
+  
+}
+
+.label {
+  margin-right: 3px;
+  padding: 5px;
+}
+
+.input {
+  padding: 5px;
+  margin-left: 5px;
+  border: transparent;
+  border-bottom: 2px solid black;
+}
+
+
+.form_h2 {
+  font-size: 12px;
+  text-align: center;
+}
+
+.form_lock {
+  margin: 5px 5px 0 0;
+}
+
+.encontrar_h1 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+
+.encontrar_h2 {
+  margin-bottom: 10px;
+}
+
+.cap_fotorn {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cap_fotorn_img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 90%;
+}
+
+.cap_bio {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cap_bio_h1 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cap_bio_h1_red {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cap_bio_span {
+  line-height: 1.6;
+  text-align: justify;
+  width: 90%;
+}
+
+.cap_final_h1 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 20px;
+  color: #ef234b;
+  text-shadow: 1px 1px #ef234b;
+  /* background: black; */
+}
+
+/* .cap_setesete {
+  margin: 20px 0 20px 0;
+} */
+
+.cap_setesete {
+  margin: 20px 0 20px 0;
+  background: #0c0c0c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 125px; /*tem q ter por causa do .jivosite... ocupa espaço */ 
+}
+
+.cap_setesete_img {
+  width: 20%;
+}
