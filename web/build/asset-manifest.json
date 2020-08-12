@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f04444c5.chunk.css",
+    "main.js": "/static/js/main.2e872ec1.chunk.js",
+    "main.js.map": "/static/js/main.2e872ec1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e7310a31.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e7310a31.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.20faadb6.chunk.js": "/static/js/2.20faadb6.chunk.js",
+    "static/js/2.20faadb6.chunk.js.map": "/static/js/2.20faadb6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ee8011044730f841f924ba1fec9d2371.js": "/precache-manifest.ee8011044730f841f924ba1fec9d2371.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.f04444c5.chunk.css.map": "/static/css/main.f04444c5.chunk.css.map",
+    "static/js/2.20faadb6.chunk.js.LICENSE.txt": "/static/js/2.20faadb6.chunk.js.LICENSE.txt",
+    "static/media/Roberto_Nascimento_inteira.png": "/static/media/Roberto_Nascimento_inteira.2b17836f.png",
+    "static/media/garantia_oab.png": "/static/media/garantia_oab.b5ac88ee.png",
+    "static/media/logosetesete.png": "/static/media/logosetesete.29bcf140.png",
+    "static/media/oab_central.png": "/static/media/oab_central.897c7851.png",
+    "static/media/oab_faixa.png": "/static/media/oab_faixa.368557de.png",
+    "static/media/oferta.png": "/static/media/oferta.ffcb95cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7310a31.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.20faadb6.chunk.js",
+    "static/css/main.f04444c5.chunk.css",
+    "static/js/main.2e872ec1.chunk.js"
+  ]
+}
