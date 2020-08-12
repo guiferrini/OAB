@@ -13,12 +13,19 @@ import central from '../../Assets/oab_central.png';
 
 // import FormaAC from '../../Components/FormAC/index';
 import api from '../../Components/ActiveCampaign/services';
-import { ac, AC_Form, account_view } from '../../Components/ActiveCampaign/api';
+import { ac, AC_Form, list, account_view } from '../../Components/ActiveCampaign/api';
 // import { ac2 } from '../../Services/api';
+import axios from 'axios';
+import 'axios-endpoints';
+import { Endpoint } from 'axios-endpoints';
+// import express from 'express';
+// import request from 'request';
+
 import './styles.css';
 import Button from '../../Components/Button';
 import Input from '../../Components/Input';
 import validationError from '../../Components/Erros/ValidationErrors';
+import EndpointFactory from 'axios-endpoints';
 
 interface SingInFormData {
   name: string;
@@ -29,17 +36,54 @@ const Captura: React.FC = () => {
   const formRef = useRef<FormHandles>(null); // pego infos do meu input
   // console.log(formRef);
   
-
   const handleSubmit = useCallback(async(data: SingInFormData) => {
-    try {
-      // const response = await api.get('/');
-      // console.log(response.data);
+    try {   
+      const endereco = 'https://77digitalmarketing.api-us1.com/admin/api.php';
+      const key = '664dbbb7f5af474e0c6e087fafcc73927cec39c10a5c26dea2e0a8901e067c159af02892';
+      // function(chamar){// }
+      //fazer uma função aqui!
 
-      // const vai = await ac2;
-      const vai = await account_view;
-      const responseii = await ac; 
-      // const resp = await AC_Form;
-      // console.log(responseii);
+      const api = await axios.get(endereco, {
+        params: {
+          api_key: key,
+          api_action: 'list_view',
+          api_output: 'json', // json, xml ou serialize
+          id: 7,
+        }
+      });
+      
+      //GET - list_view - id:7
+      //GET - message_list - sem id
+      //GET - form_getforms - retorna tds Formulários, só tem impar de 1 até 23
+      //GET - form_html - com id, retorna o codigo html...
+
+      const contactha = {
+        email: 'gui_test@example.com',
+        first_name: 'gui_test_FirstName',
+      };
+
+      const postemail = await axios.post(
+        endereco, 
+        {
+          contacts: {
+            email: 'gui_test@example.com',
+            first_name: 'gui_test_FirstName',
+            p: 23,
+            status: 1,
+
+          }
+        }, 
+        {
+          params: {
+            api_key: key,
+            api_action: 'contact_add',
+            api_output: 'json', // json, xml ou serialize
+        },
+      });
+
+      // const vai = await account_view;
+      console.log(postemail.data);      
+
 
       formRef.current?.setErrors({}); //zerando erros
       
@@ -54,12 +98,8 @@ const Captura: React.FC = () => {
         abortEarly: false,
       });
 
-      // singIn({
-      //     email: data.email,
-      //     password: data.password,
-      //   });
-        
-      //   history.push('/UserPage');
+      // salvar inputs em uma bd
+      //   history.push('/UserPage'); obrigado
       alert('vai p pagina de obrigado');
 
     } catch (err) {
@@ -147,14 +187,14 @@ const Captura: React.FC = () => {
           </span>
         </Col>
       </Row>
-      <Row> {/*Final*/}
+      <Row> {/*Frase Impacto*/}
         <Col>
           <h1 className="cap_final_h1">
             SAIA NA FRENTE DOS CONCORRENTES E FAÇA AGORA MESMO O DOWNLOAD GRATUITO DO NOSSO E-BOOK 
           </h1>
         </Col>
       </Row>
-      <Row> {/*ebook*/}
+      <Row> {/*ebook - Button Isca*/}
         <Col>
           <a href="#ebook"> 
           <Button>Quero Baixar meu E-Book GRATUITAMENTE!</Button>

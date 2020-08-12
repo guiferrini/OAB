@@ -1,7 +1,3 @@
-// const api = axios.create({
-//   baseURL: 'https://77digitalmarketing.api-us1.com',
-// });
-
 // var express = require('express');
 // var app = express();
  
@@ -20,7 +16,7 @@ export const ac = new ActiveCampaign(
   "https://77digitalmarketing.api-us1.com", 
   "664dbbb7f5af474e0c6e087fafcc73927cec39c10a5c26dea2e0a8901e067c159af02892",
 );
-	
+
 // TEST API credentials - infos conta 77 (completo)
 ac.credentials_test().then(function(result) {
   // successful request
@@ -34,7 +30,7 @@ ac.credentials_test().then(function(result) {
 });
 
 // GET requests - infos conta 77 (resumo)
-export const account_view = ac.api("account/view", {});
+export const account_view = ac.api("list_list", {});
 account_view.then(function(result) {
   // successful request
   console.log(result);

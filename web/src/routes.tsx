@@ -14,7 +14,7 @@ const Routes = () => {
       <Switch>
         {/* <Route component={Principal} path='/principal'/> */}
         {/* <Route component={ModeloBT} path='/modelo' /> */}
-        <Route component={Vendas} path='/vendas' />
+        <Route component={Vendas} path='/' exact />
         {/* <Route component={VendasS} path='/vendasS' /> */}
         {/* <Route component={OAB} path='/oab' /> */}
         <Route component={Captura} path='/captura' />
